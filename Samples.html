@@ -1,0 +1,177 @@
+1<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  </head>
+<body>
+  
+  <p id="demo"></p>
+  <h1 id="ghj"></h1>
+  <div></div>
+<!-- <script >
+  const Display=(req,res)=>{
+const val=true;
+if(val){
+    req("ok")
+}
+else{
+    res("no")
+}
+}
+
+async function asyncStatus(){
+console.log('succes');
+ red=await Display
+console.log(res);
+
+}
+document.getElementById(' ghj').innerHTML=asyncStatus;
+
+asyncStatus()
+</script>     -->
+<h1 id="app"> hai my name is billa</h1>
+<input type="text" placeholder="enter the value"  id="input-foot"/>
+<button id="btn">button</button>
+<h1 id="final"></h1>
+<div style="list-style: none">
+<h1 id="answer">hai </h1>
+<ul id="heros">
+<li class="actors" style="padding: 10px; font-size: 14px;  ">tom cruse</li>
+<li class="actors" style="padding: 10px; font-size: 14px;  ">doine joncen</li>
+<li class="actors" style="padding: 10px; font-size: 14px;  ">jasen sathem</li>
+<li class="actors" style="padding: 10px; font-size: 14px;  ">bruss banner</li>
+
+</ul>
+<h1 class="bai">hai</h1>
+
+<h2>querySelectorAll Example</h2>
+
+<p class="selected">This paragraph will be selected.</p>
+<p>This paragraph will not be selected.</p>
+<p class="selected">Another paragraph that will be selected.</p>
+</div>
+<label>enter here</label>
+<input  type="text" name="sdr" placeholder="enter"/>
+<input id="test"/>
+<script >
+var a="dfr"
+if(a==10){
+document.write("equal")
+}
+else if(a!==10){
+document.write("not equal")
+}
+else{
+  document.write("default")
+}
+
+    const result=document.getElementById('app');
+    result.innerText="hai my name is thala"
+var text=document.getElementById("input-foot");
+var responce=document.getElementById("final");
+var button=document.getElementById("btn");
+
+var heros=document.getElementById('heros')
+
+const  result1=heros.getElementsByClassName('actors');
+console.log(result1[1].innerText);
+const  result89=document.getElementsByClassName('bai');
+console.log(result89[0].innerHTML);
+
+
+const result2=document.getElementsByTagName('li')
+console.log(result2[3].innerText);
+
+const result3=document.getElementsByName('sdr')
+console.log(result3);
+
+// const result4=document.querySelector('li')
+// console.log(result4);
+
+
+const result5=document.querySelectorAll('li')
+console.log(result5);
+const selectedParagraphs = document.querySelectorAll('p');
+console.log(selectedParagraphs.values);
+
+// Loop through each selected paragraph and apply styles
+selectedParagraphs.forEach(paragraph => {
+  paragraph.style.color = 'blue';
+
+})
+
+button.addEventListener('click',()=>{
+    responce.innerHTML=text.value
+}) 
+
+const answer=new Promise((resolve,reject)=>{
+var i=10 ; 
+if(i==10){
+  resolve()
+}
+else{
+  reject()
+}
+
+})
+
+answer .then(()=>{console.log("values are equal");}) 
+
+.catch(()=>{console.log("not equal");})
+
+
+
+
+
+
+async function exampleFunction() {
+  try {
+    // Some code that might throw an exception
+    let result = await new Promise(resolve => setTimeout(() => resolve(10), 1000));
+    console.log('This line will not be reached if an exception occurs.', result);
+  } catch (error) {
+    // Handle the exception here
+    console.error('An error occurred:', error.message);
+  } finally {
+    // Code in this block will be executed regardless of whether an exception occurred or not
+    console.log('This block will be executed no matter what.');
+  }
+}
+
+// Calling the function to see the try...catch in action
+
+exampleFunction()
+async function  values(){
+var a=10
+  if(a==10){
+  console.log("equal");
+}
+}
+    console.log(values());
+
+// const Differ=(para)=>{
+//  document.getElementById("demo").innerHTML = para;
+// console.log(para);
+// }
+// const  Transf=()=>{
+//   Differ("ok")
+// }
+// Transf()
+// var a=10
+// var b=10
+// a+=b
+// console.log(a);
+//promises
+// it a  javascript Object used for catch the success and failier methodes
+
+//syncronus (in syncronus methode each and every time waiting for a result of the every function)
+
+//Asyncronus ( in asyncronus function using promises we are not waite for the every function's result)
+
+
+</script>
+</body>
+</html>
